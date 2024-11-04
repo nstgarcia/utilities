@@ -1,0 +1,31 @@
+- uninstall package from ubuntu
+
+sudo apt remove <feature>
+
+-install exa:
+
+#1.install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+or 
+apt-get install cargo
+
+#2.install exa
+cargo install exa
+
+##### In bashrc ##### 
+
+#Starship configuration
+export STARSHIP_CONFIG=~/.config/starship.toml
+eval "$(starship init bash)"
+
+### Alias ###
+#alias for Eza
+alias ls='eza --icons -F --group-directories-first --git -1'
+alias ll='ls -alF'
+
+#other alias
+alias update='sudo apt-get update && sudo apt-get upgrade'
+#load cargo environment
+. "$HOME/.cargo/env"
+
+###################### 

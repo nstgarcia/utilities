@@ -1,0 +1,10 @@
+configurar starship windows:
+
+1) code $PROFILE
+
+2) add to $PROFILE : 
+$ENV:STARSHIP_CONFIG = "$HOME\Documents\\development\starship\cfg\starship.toml"
+Invoke-Expression (&starship init powershell)
+
+3) if not loaded by default run :
+Invoke-Expression (&starship init powershell)

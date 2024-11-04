@@ -1,0 +1,5 @@
+to set an alias :
+1. code $PROFILE
+2. add a function
+3. set an alias 
+4. open a new powershell window
